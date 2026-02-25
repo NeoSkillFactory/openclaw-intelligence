@@ -1,0 +1,59 @@
+{
+  "name": "openclaw-intelligence-default",
+  "version": "1.0.0",
+  "agents": [
+    {
+      "id": "reviewer",
+      "name": "Code Reviewer",
+      "capabilities": ["code-review", "diff-analysis", "style-check"]
+    },
+    {
+      "id": "deployer",
+      "name": "Deployment Agent",
+      "capabilities": ["deploy", "rollback", "release-management"]
+    },
+    {
+      "id": "tester",
+      "name": "Testing Agent",
+      "capabilities": ["unit-test", "integration-test", "e2e-test", "coverage"]
+    },
+    {
+      "id": "refactorer",
+      "name": "Refactoring Agent",
+      "capabilities": ["code-restructure", "optimization", "cleanup"]
+    },
+    {
+      "id": "debugger",
+      "name": "Debug Agent",
+      "capabilities": ["bug-fix", "error-trace", "log-analysis"]
+    },
+    {
+      "id": "documenter",
+      "name": "Documentation Agent",
+      "capabilities": ["readme", "jsdoc", "api-docs", "changelog"]
+    },
+    {
+      "id": "scaffolder",
+      "name": "Scaffolding Agent",
+      "capabilities": ["project-init", "boilerplate", "template-gen"]
+    },
+    {
+      "id": "monitor",
+      "name": "Monitoring Agent",
+      "capabilities": ["health-check", "metrics", "alerts"]
+    }
+  ],
+  "errorHandler": {
+    "maxRetries": 3,
+    "retryDelayMs": 500,
+    "fallbackAgents": {
+      "reviewer": "documenter",
+      "deployer": "monitor",
+      "tester": "debugger",
+      "scaffolder": "documenter"
+    }
+  },
+  "intentProcessor": {
+    "confidenceThreshold": 0.15
+  }
+}

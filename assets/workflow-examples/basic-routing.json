@@ -1,0 +1,15 @@
+{
+  "name": "basic-routing",
+  "description": "A basic workflow that demonstrates task routing between agents",
+  "steps": [
+    {
+      "input": "Review the authentication module for security issues"
+    },
+    {
+      "input": "Run unit tests for the user service"
+    },
+    {
+      "input": "Deploy the latest build to staging"
+    }
+  ]
+}

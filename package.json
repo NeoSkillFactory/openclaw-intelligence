@@ -1,0 +1,22 @@
+{
+  "name": "openclaw-intelligence",
+  "version": "1.0.0",
+  "description": "Transforms OpenClaw into Apple Intelligence-like automation with seamless agent workflows and error handling",
+  "main": "scripts/openclaw-intelligence.js",
+  "bin": {
+    "openclaw-intelligence": "scripts/cli.js"
+  },
+  "scripts": {
+    "start": "node scripts/openclaw-intelligence.js",
+    "cli": "node scripts/cli.js",
+    "test": "node --test 'tests/*.test.js'"
+  },
+  "keywords": [
+    "openclaw",
+    "automation",
+    "intelligence",
+    "agent",
+    "workflow"
+  ],
+  "license": "MIT"
+}

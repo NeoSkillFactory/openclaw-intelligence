@@ -1,0 +1,27 @@
+{
+  "name": "full-pipeline",
+  "description": "A full CI/CD-like pipeline workflow with review, testing, and deployment",
+  "steps": [
+    {
+      "input": "Review all pending pull requests"
+    },
+    {
+      "input": "Run the full test suite with coverage"
+    },
+    {
+      "input": "Fix any failing tests"
+    },
+    {
+      "input": "Refactor the database access layer"
+    },
+    {
+      "input": "Update the API documentation"
+    },
+    {
+      "input": "Deploy to production"
+    },
+    {
+      "input": "Monitor health after deployment"
+    }
+  ]
+}
