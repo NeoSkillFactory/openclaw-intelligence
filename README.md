@@ -12,8 +12,6 @@ See `assets/config-template.json` for the default configuration. Customize agent
 
 Source code: [github.com/NeoSkillFactory/openclaw-intelligence](https://github.com/NeoSkillFactory/openclaw-intelligence)
 
-**Price suggestion:** $29.99 USD
-
 ## License
 
 MIT © NeoSkillFactory
